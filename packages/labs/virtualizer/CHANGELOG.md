@@ -1,5 +1,11 @@
 # @lit-labs/virtualizer
 
+## 0.0.0-masonry-preview-20220906213645
+
+### Minor Changes
+
+- [`8449c8d9`](https://github.com/lit/lit/commit/8449c8d9033fede4cb4993007c58fe13605d7782) - Preview of scrolling improvements and masonry layout
+
 ## 0.7.2
 
 ### Patch Changes
