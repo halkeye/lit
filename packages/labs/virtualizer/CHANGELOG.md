@@ -1,5 +1,11 @@
 # @lit-labs/virtualizer
 
+## 0.0.0-masonry-preview-20220906220426
+
+### Patch Changes
+
+- [`49293498`](https://github.com/lit/lit/commit/49293498c5903a89183137a8aafc3f1e9c7a79e4) - Adding missing file to package.json
+
 ## 0.0.0-masonry-preview-20220906213645
 
 ### Minor Changes
