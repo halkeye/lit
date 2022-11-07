@@ -527,13 +527,6 @@ export type RenderInfo = {
   deferHydration: boolean;
 };
 
-const defaultRenderInfo = {
-  elementRenderers: [LitElementRenderer],
-  customElementInstanceStack: [],
-  customElementHostStack: [],
-  deferHydration: false,
-};
-
 declare global {
   interface Array<T> {
     flat(depth: number): Array<T>;
@@ -556,11 +549,17 @@ export function* render(
   value: unknown,
   renderInfo?: Partial<RenderInfo>
 ): IterableIterator<string> {
+  const defaultRenderInfo = {
+    elementRenderers: [LitElementRenderer],
+    customElementInstanceStack: [],
+    customElementHostStack: [],
+    deferHydration: false,
+  };
   renderInfo = {...defaultRenderInfo, ...renderInfo};
   yield* renderValue(value, renderInfo as RenderInfo);
 }
 
-function* renderValue(
+export function* renderValue(
   value: unknown,
   renderInfo: RenderInfo
 ): IterableIterator<string> {
