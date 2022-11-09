@@ -7,7 +7,7 @@
 import {ElementRenderer} from './element-renderer.js';
 import {LitElement, CSSResult, ReactiveElement} from 'lit';
 import {_$LE} from 'lit-element/private-ssr-support.js';
-import {renderValue, RenderInfo} from './render-lit-html.js';
+import {renderValue, type RenderInfo} from './render-value.js';
 
 export type Constructor<T> = {new (): T};
 

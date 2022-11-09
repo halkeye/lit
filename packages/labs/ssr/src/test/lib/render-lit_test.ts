@@ -10,7 +10,7 @@ import {getWindow} from '../../lib/dom-shim.js';
 import {test} from 'uvu';
 // eslint-disable-next-line import/extensions
 import * as assert from 'uvu/assert';
-import {RenderInfo} from '../../index.js';
+import type {RenderInfo} from '../../index.js';
 
 import type * as testModule from '../test-files/render-test-module.js';
 

@@ -7,7 +7,7 @@
  */
 
 import {escapeHtml} from './util/escape-html.js';
-import {RenderInfo} from './render-lit-html.js';
+import type {RenderInfo} from './render-value.js';
 
 export type Constructor<T> = {new (): T};
 

@@ -5,4 +5,5 @@
  */
 
 export * from './lib/render-lit-html.js';
+export {RenderInfo} from './lib/render-value.js';
 export {ElementRenderer} from './lib/element-renderer.js';

@@ -5,7 +5,7 @@
  */
 
 import type {TemplateResult} from 'lit';
-import type {RenderInfo} from '../../../lib/render-lit-html.js';
+import type {RenderInfo} from '../../../lib/render-value.js';
 
 export type SSRExpectedHTML =
   | string
